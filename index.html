@@ -3,6 +3,12 @@
   <head> 
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    
+    <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script>
+
+    
+    
+    
   </head>
   <body style="margin:0px; overflow:hidden;">
     <a-scene embedded arjs="sourceType:webcam;">
@@ -20,7 +26,7 @@
             animation__fade="property:opacity;to:1;filling:forward;loop:true;dir:alternate;dur:2000"
             color="tomato"></a-text>
 
-          <a-entity id="test"
+          <a-entity id="test" mirror
             obj-model="obj:#person"
             material="color:tomato"
             scale="0.1 0.1 0.1"
